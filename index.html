@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+
+    <title>SignIn Screen</title>
+  </head>
+  <body>
+    <!-- Sign In Form -->
+    <div class="container">
+      <img
+        class="logo"
+        src="./images/bluesky.png"
+        alt="bluesky-logo"
+        width="100"
+      />
+      <h3 class="title">Sign in to manage your pets and appointments</h3>
+      <div class="card">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            placeholder="Enter Email Address"
+            name="email"
+            id="email"
+          />
+        </div>
+
+        <!--button-->
+        <button class="button">Send Verification Code</button>
+
+        <!-- Alternate Login Options -->
+        <div class="alternate-login">
+          <a href="#" style="color: rgb(51, 51, 51)"
+            >Login with phone number instead</a
+          >
+        </div>
+
+        <!-- New User Sign-Up -->
+        <div class="New-user">
+          <a href="#" style="color: #2489b0"> Don't have an Account? Sign-Up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup -->
+
+    <div class="popup">
+      <div class="popup-window">
+        <button class="close-btn">&times;</button>
+        <h3 class="popup-title">Verify your email</h3>
+        <!--popup form -->
+        <div class="popup-form">
+          <div class="popup-content">
+            <p class="pop-text">
+              We've sent a 6-digit code to your email address.Enter it below.
+            </p>
+
+            <!-- OTP Inputs -->
+            <div class="otp-container">
+              <input type="tel" maxlength="1" class="otp-input" />
+              <input type="tel" maxlength="1" class="otp-input" />
+              <input type="tel" maxlength="1" class="otp-input" />
+              <input type="tel" maxlength="1" class="otp-input" />
+              <input type="tel" maxlength="1" class="otp-input" />
+              <input type="tel" maxlength="1" class="otp-input" />
+            </div>
+            <p class="pop-countdown">
+              Resend Code in <span id="countdown">60</span>
+              <span class="unit">seconds</span>
+            </p>
+            <button class="verify-button">Verify</button>
+          </div>
+          <button class="close">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
