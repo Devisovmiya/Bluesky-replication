@@ -1,0 +1,148 @@
+.popup{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+   
+}
+
+
+.popup-title{
+  text-align:left;
+  
+  width: 432px;
+line-height: 8px;
+margin-left: -12px;
+color: rgba(36, 137, 176, 1);
+font-size: 24px;
+font-weight: 700;
+
+}
+.popup-window{
+   position:relative;
+   
+    
+    width:700px;
+    height:auto;
+    padding:35px 0 35px;
+    padding-left: 50px;
+    border-radius:25px;
+    border:1px solid rgba(124, 120, 120, 0.69);
+    box-shadow: 0 5px 25px rgb(66, 65, 65);
+    gap:25px;
+    background-color:rgba(255, 255, 255,1);
+}
+.popup-form{
+   
+    
+    
+    background-color:rgba(255, 255, 255,1 );
+    width: 580px;
+    height:auto;
+    border-radius:12px;
+    border:1px solid rgba(188, 243, 255, 1);
+    padding:20px 25px;
+    margin: 0px 0.5%;
+    
+
+
+}
+.pop-text{
+    text-align:left;
+    margin:10px;
+    padding-left:4px;
+    padding-top:15px;
+    font-weight:400;
+    font-family:Helvetica;
+    font-size:18px;
+    width: 100%;
+    height:auto;
+
+}
+.otp-container{
+    gap: 12px;
+    display:flex;
+    width: 100%;;
+    height:auto;
+    justify-content:center;
+    margin: 10px -8px;
+    
+}
+.otp-input{
+    
+    width:68px;
+    height:75px;
+    margin-left:10px;
+    text-align: center;
+    border-radius:10px;
+    border:1px solid rgba(241, 241, 243, 1);
+    outline: none;
+    /*box-sizing:border-box;*/
+}
+.pop-countdown{
+    
+    width: 100%;
+    height:27px;
+    gap: 24px;
+    color: rgba(38, 38, 38, 1);
+}
+#countdown,.pop-countdown .unit{
+    color:rgba(0, 165, 155, 1);
+}
+.pop-countdown,#countdown{
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 600;
+    
+}
+.unit{
+        margin-right:-1px;
+
+
+}
+.verify-button{
+    background-color: rgba(254, 95, 61, 1);
+    color:rgba(255, 255, 255, 1);
+    width:560px;
+    height:56px;
+    border: none;
+    margin-bottom:10px;
+    border-radius:10px;
+    font-weight: 700;
+    font-size:20px;
+}
+.close{
+    background-color: rgba(255, 255, 255,1);
+    color:rgba(36, 137, 176, 1);
+    width:560px;
+    height:56px; 
+    border-radius:10px;
+    font-weight: 700;
+    font-size:20px;
+    border:0px;
+
+}
+.close-btn{
+    position: absolute;
+    background-color: white;
+    border:none;
+    top: 15px;
+    right:15px;
+    font-size: 20px;
+    border:1px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height:25px;
+    cursor: pointer;
+
+    
+    
+    
+}
